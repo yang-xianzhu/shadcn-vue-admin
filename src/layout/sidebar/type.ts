@@ -1,4 +1,6 @@
 export interface TplayItem {
-	title: string
-	list: { label: string; key: string | number; icon?: string }[]
+	label: string
+	key: string
+	icon?: string
+	children: { label: string; key: string | number; icon?: string }[]
 }

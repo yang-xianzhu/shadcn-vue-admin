@@ -3,10 +3,11 @@ import { createApp } from 'vue'
 import '@/assets/index.css'
 import './style.css'
 import App from './App.vue'
-import router from '@/router'
+import { router } from '@/router'
+import routerMiddleware from '@/router/middleware'
 
 const app = createApp(App)
 
-app.use(router)
+app.use(router).use(routerMiddleware)
 
 app.mount('#app')

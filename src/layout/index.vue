@@ -16,21 +16,23 @@ import type { TplayItem } from './sidebar/type'
 
 const playlists: TplayItem[] = [
 	{
-		title: '页面',
-		list: [
+		label: '页面',
+		key: '/pages/form',
+		children: [
 			{
 				label: '表单页',
-				key: '/page/form',
+				key: '/pages/form',
 			},
 			{
-				label: '详情页',
-				key: '/page/detail',
+				label: '基础表格',
+				key: '/pages/table',
 			},
 		],
 	},
 	{
-		title: '组件',
-		list: [
+		label: '组件',
+		key: '/table',
+		children: [
 			{
 				label: 'Table',
 				key: '/table',
